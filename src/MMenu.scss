@@ -1,0 +1,25 @@
+.menu-training {
+    z-index: 1;
+  
+    &__btn {
+      margin-left: auto;
+      margin-right: auto;
+      left: 280px;
+      right: 0;
+      bottom: 18px;
+      width: 50px;
+    }
+  
+    &-card {
+      margin-top: 30px;
+      width: 100px;
+  
+    }
+  
+    &-tab {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+  
