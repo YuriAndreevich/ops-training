@@ -1,9 +1,8 @@
-import strelaSVG from "../../../Img/strela.svg";
-
-import ZvukIzv from "../../../Img/training/звуковойОповещатель.png";
-import SvetOpov from "../../../Img/training/световойОповещатель.png";
-import DimovoyToch from "../../../Img/training/извещательДымовойТочечный.png";
-import izvRuchn from "../../../Img/training/извещательРучной.png";
+import strelaSVG from "../../img/strela.svg";
+import ZvukIzv from "../../img/training/звуковойОповещатель.png";
+import SvetOpov from "../../img/training/световойОповещатель.png";
+import DimovoyToch from "../../img/training/извещательДымовойТочечный.png";
+import izvRuchn from "../../img/training/извещательРучной.png";
 
 export const iBoard = [
   {

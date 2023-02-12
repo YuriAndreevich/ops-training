@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import schema from "../Img/schema3.png";
+import schema from "./img/schema3.png";
 import cx from "classnames";
 import MMenu from "./MMenu";
-import net from "../../sound/net.mp3";
-import da from "../../sound/da.mp3";
+import net from "./sound/net.mp3";
+import da from "./sound/da.mp3";
 import { Howl } from "howler";
 
 import { board, iBoard } from "./data/2/2l1";

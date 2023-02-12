@@ -1,10 +1,10 @@
 import { Stage, Layer, Star, Text, Line } from "react-konva";
 import React from "react";
 
-import ZvukIzv from "../../Img/training/звуковойОповещатель.png";
-import SvetOpov from "../../Img/training/световойОповещатель.png";
-import DimovoyToch from "../../Img/training/извещательДымовойТочечный.png";
-import izvRuchn from "../../Img/training/извещательРучной.png";
+import ZvukIzv from "../img/training/звуковойОповещатель.png";
+import SvetOpov from "../img/training/световойОповещатель.png";
+import DimovoyToch from "../img/training/извещательДымовойТочечный.png";
+import izvRuchn from "../img/training/извещательРучной.png";
 const izvArray = [ZvukIzv, SvetOpov, DimovoyToch, izvRuchn]
 function generateShapes() {
   return izvArray.map((src, i) => ({
