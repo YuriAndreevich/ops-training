@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/ops-training/static/css/main.073c9b0a.css",
-    "main.js": "/ops-training/static/js/main.039bbafb.js",
-    "static/js/787.d86eb7ab.chunk.js": "/ops-training/static/js/787.d86eb7ab.chunk.js",
-    "static/media/logo.svg": "/ops-training/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/ops-training/static/css/main.611f71a9.css",
+    "main.js": "/ops-training/static/js/main.25226823.js",
+    "static/media/net.mp3": "/ops-training/static/media/net.af9636547210c4982a09.mp3",
+    "static/media/da.mp3": "/ops-training/static/media/da.ab6b7b7ffdaa59928ae3.mp3",
+    "static/media/schema1.png": "/ops-training/static/media/schema1.56e3e873a24b4514dbc9.png",
+    "static/media/setting.svg": "/ops-training/static/media/setting.16a356b5d10f28ec2af6317d714cd4b7.svg",
+    "static/media/strela.svg": "/ops-training/static/media/strela.a2d1148746eb0e08bf672fb2bbdda35f.svg",
     "index.html": "/ops-training/index.html",
-    "main.073c9b0a.css.map": "/ops-training/static/css/main.073c9b0a.css.map",
-    "main.039bbafb.js.map": "/ops-training/static/js/main.039bbafb.js.map",
-    "787.d86eb7ab.chunk.js.map": "/ops-training/static/js/787.d86eb7ab.chunk.js.map"
+    "main.611f71a9.css.map": "/ops-training/static/css/main.611f71a9.css.map",
+    "main.25226823.js.map": "/ops-training/static/js/main.25226823.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.039bbafb.js"
+    "static/css/main.611f71a9.css",
+    "static/js/main.25226823.js"
   ]
 }
