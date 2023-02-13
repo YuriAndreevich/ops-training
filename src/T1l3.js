@@ -1,7 +1,7 @@
 import React from 'react'
 import Dnd from './draw/Dnd'
 import MMenu from "./MMenu";
-import schema from "./img/schema1.png";
+import schema from "./img/schema1l3.png";
 
 function T1l3() {
   return (

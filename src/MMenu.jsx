@@ -66,13 +66,13 @@ function MMenu() {
                     <Portal>
                       <MenuList zIndex="10000">
                         <MenuItem>
-                          <Link to="/training/1l1"> Уровень </Link>1
+                          <Link to="/ops-training/1l1"> Уровень </Link>1
                         </MenuItem>
                         <MenuItem>
-                          <Link to="/training/1l2">Уровень 2</Link>
+                          <Link to="/ops-training/1l2">Уровень 2</Link>
                         </MenuItem>
                         <MenuItem>
-                          <Link to="/training/1l3">Уровень 3</Link>
+                          <Link to="/ops-training/1l3">Уровень 3</Link>
                         </MenuItem>
                       </MenuList>
                     </Portal>
@@ -84,13 +84,13 @@ function MMenu() {
                     <Portal>
                       <MenuList zIndex="10000">
                         <MenuItem>
-                          <Link to="/training/2l1">Уровень 1</Link>
+                          <Link to="/ops-training/2l1">Уровень 1</Link>
                         </MenuItem>
                         <MenuItem>
-                          <Link to="/training/2l2">Уровень 2</Link>
+                          <Link to="/ops-training/2l2">Уровень 2</Link>
                         </MenuItem>
                         <MenuItem>
-                          <Link to="/training/2l3">Уровень 3</Link>
+                          <Link to="/ops-training/2l3">Уровень 3</Link>
                         </MenuItem>
                       </MenuList>
                     </Portal>
@@ -102,13 +102,13 @@ function MMenu() {
                     <Portal>
                       <MenuList zIndex="10000">
                         <MenuItem>
-                          <Link to="/training/3l1">Уровень 1</Link>
+                          <Link to="/ops-training/3l1">Уровень 1</Link>
                         </MenuItem>
                         <MenuItem>
-                          <Link to="/training/3l2">Уровень 2</Link>
+                          <Link to="/ops-training/3l2">Уровень 2</Link>
                         </MenuItem>
                         <MenuItem>
-                          <Link to="/training/3l3">Уровень 3</Link>
+                          <Link to="/ops-training/3l3">Уровень 3</Link>
                         </MenuItem>
                       </MenuList>
                     </Portal>
@@ -120,13 +120,13 @@ function MMenu() {
                     <Portal>
                       <MenuList zIndex="10000">
                         <MenuItem>
-                          <Link to="/training/4l1">Уровень 1</Link>
+                          <Link to="/ops-training/4l1">Уровень 1</Link>
                         </MenuItem>
                         <MenuItem>
-                          <Link to="/training/4l2">Уровень 2</Link>
+                          <Link to="/ops-training/4l2">Уровень 2</Link>
                         </MenuItem>
                         <MenuItem>
-                          <Link to="/training/4l3">Уровень 3</Link>
+                          <Link to="/ops-training/4l3">Уровень 3</Link>
                         </MenuItem>
                       </MenuList>
                     </Portal>

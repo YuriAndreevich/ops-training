@@ -82,6 +82,9 @@ const T1l2 = () => {
 
   return (
     <>
+      {/* {stars.map((star) => (
+        <img src={star.src} />
+      ))} */}
       <select
         value={tool}
         onChange={(e) => {
@@ -103,8 +106,8 @@ const T1l2 = () => {
         <Layer>
           {stars.map((star) => (
             <>
-              {console.log(star.src)}
-              <Star
+              {/* {console.log(star)} */}
+              <img
                 alt=""
                 src={star.src}
                 className="icon"
