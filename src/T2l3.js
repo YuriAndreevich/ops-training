@@ -1,7 +1,8 @@
 import React from 'react'
 import Dnd from './draw/Dnd'
+// import Test1 from './draw/Test'
 import MMenu from "./MMenu";
-import schema from "./img/schema1l3.png";
+import schema from "./img/schema2l3.png";
 
 function T1l3() {
   return (
@@ -11,8 +12,8 @@ function T1l3() {
         className="boardImg absolute"
         alt=""
       />
-
       <Dnd />
+      {/* <Test1 /> */}
       <MMenu />
     </div>
   )

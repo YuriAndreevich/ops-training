@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import schema from "./img/schema4.png";
+import schema from "./img/schema2.png";
 import cx from "classnames";
 import MMenu from "./MMenu";
 import net from "./sound/net.mp3";
@@ -9,9 +9,9 @@ import { Howl } from "howler";
 import { board, iBoard } from "./data/2/2l1";
 
 
-import "./data/4/t4.scss";
+import "./data/2/t2.scss";
 
-function T2l1() {
+function T2l2() {
 
 
   const [boards, setBoard] = useState(board);
@@ -136,7 +136,7 @@ function T2l1() {
   return (
     <div className="dnd">
       {boards.map((board, i) => (
-        <div className={cx("absolute board board4l") + i + " " + boards[i].color}>
+        <div className={cx("absolute board board2l") + i + " " + boards[i].color}>
           <div
             className={cx(
               "board__title",
@@ -182,4 +182,4 @@ function T2l1() {
   );
 }
 
-export default T2l1;
+export default T2l2;

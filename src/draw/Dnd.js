@@ -1,10 +1,12 @@
-import { Stage, Layer, Star, Text, Line } from "react-konva";
+import { Stage, Layer, Star, Text, Image, Line } from "react-konva";
 import React from "react";
 
 import ZvukIzv from "../img/training/звуковойОповещатель.png";
 import SvetOpov from "../img/training/световойОповещатель.png";
 import DimovoyToch from "../img/training/извещательДымовойТочечный.png";
 import izvRuchn from "../img/training/извещательРучной.png";
+import Draggable from 'react-draggable';
+
 const izvArray = [ZvukIzv, SvetOpov, DimovoyToch, izvRuchn]
 function generateShapes() {
   return izvArray.map((src, i) => ({
@@ -18,9 +20,8 @@ function generateShapes() {
 
 const INITIAL_STATE = generateShapes();
 
-const T1l2 = () => {
+const Dnd = () => {
   const [stars, setStars] = React.useState(INITIAL_STATE);
-  console.log(stars)
 
   const handleDragStart = (e) => {
     const id = e.target.id();
@@ -82,6 +83,15 @@ const T1l2 = () => {
 
   return (
     <>
+      <Draggable className='draggable' style={{ zIndex: '10000' }}>
+        <div>I can now be moved around!</div>
+      </Draggable>
+      <Draggable>
+        <div>I can now be moved around!</div>
+      </Draggable>
+      <Draggable>
+        <div>I can now be moved around!</div>
+      </Draggable>
       {/* {stars.map((star) => (
         <img src={star.src} />
       ))} */}
@@ -104,30 +114,33 @@ const T1l2 = () => {
         onMouseup={handleMouseUp}
       >
         <Layer>
+
+
           {stars.map((star) => (
             <>
               {/* {console.log(star)} */}
               <img
-                alt=""
-                src={star.src}
-                className="icon"
+                image='https://media.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2147483647&v=beta&t=J3kUMZwIphc90TFKH5oOO9Sa9K59fimgJf-s_okU3zs'
+                // alt=""
+                // src={star.src}
+                // className="icon"
                 key={star.id}
                 id={star.id}
                 x={star.x}
                 y={star.y}
-                numPoints={5}
-                innerRadius={20}
-                outerRadius={40}
-                fill="#89b717"
-                opacity={0.8}
-                draggable={droping && true}
-                shadowColor="black"
-                shadowBlur={10}
-                shadowOpacity={0.6}
-                shadowOffsetX={star.isDragging ? 10 : 5}
-                shadowOffsetY={star.isDragging ? 10 : 5}
-                scaleX={star.isDragging ? 1.2 : 1}
-                scaleY={star.isDragging ? 1.2 : 1}
+                // numPoints={5}
+                // innerRadius={20}
+                // outerRadius={40}
+                // fill="#89b717"
+                // opacity={0.8}
+                // draggable={droping && true}
+                // shadowColor="black"
+                // shadowBlur={10}
+                // shadowOpacity={0.6}
+                // shadowOffsetX={star.isDragging ? 10 : 5}
+                // shadowOffsetY={star.isDragging ? 10 : 5}
+                // scaleX={star.isDragging ? 1.2 : 1}
+                // scaleY={star.isDragging ? 1.2 : 1}
                 onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
 
@@ -159,4 +172,4 @@ const T1l2 = () => {
   );
 };
 
-export default T1l2;
+export default Dnd;
