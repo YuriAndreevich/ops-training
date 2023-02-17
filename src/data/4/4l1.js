@@ -1,11 +1,10 @@
-import strelaSVG from "../../../Img/strela.svg";
+import strelaSVG from "../../img/strela.svg";
+import ZvukIzv from "../../img/training/звуковойОповещатель.png";
+import SvetOpov from "../../img/training/световойОповещатель.png";
+import DimovoyToch from "../../img/training/извещательДымовойТочечный.png";
+import izvRuchn from "../../img/training/извещательРучной.png";
 
-import ZvukIzv from "../../../Img/training/звуковойОповещатель.png";
-import SvetOpov from "../../../Img/training/световойОповещатель.png";
-import DimovoyToch from "../../../Img/training/извещательДымовойТочечный.png";
-import izvRuchn from "../../../Img/training/извещательРучной.png";
-
-export const iBoard4 = [
+export const iBoard = [
   {
     id: 1,
     title: "Расставьте  ",
@@ -69,7 +68,7 @@ export const iBoard4 = [
     items: [{ id: [12, 4], title: "12" }],
   },
 ];
-export const board4 = [
+export const board = [
   {
     id: 1,
     title:

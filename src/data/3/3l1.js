@@ -1,11 +1,10 @@
-import strelaSVG from "../../../Img/strela.svg";
+import strelaSVG from "../../img/strela.svg";
+import ZvukIzv from "../../img/training/звуковойОповещатель.png";
+import SvetOpov from "../../img/training/световойОповещатель.png";
+import DimovoyToch from "../../img/training/извещательДымовойТочечный.png";
+import izvRuchn from "../../img/training/извещательРучной.png";
 
-import ZvukIzv from "../../../Img/training/звуковойОповещатель.png";
-import SvetOpov from "../../../Img/training/световойОповещатель.png";
-import DimovoyToch from "../../../Img/training/извещательДымовойТочечный.png";
-import izvRuchn from "../../../Img/training/извещательРучной.png";
-
-export const iBoard3 = [
+export const iBoard = [
   {
     id: 1,
     title: "Расставьте  ",
@@ -18,9 +17,9 @@ export const iBoard3 = [
     items: [{ id: [2], title: "2" }],
   },
   {
-    id: [3, 11],
+    id: [3],
     title: "3",
-    items: [{ id: [3, 11], title: "3" }],
+    items: [{ id: [3], title: "3" }],
   },
 
   {
@@ -29,47 +28,47 @@ export const iBoard3 = [
     items: [{ id: [12, 4], title: "4" }],
   },
   {
-    id: [5, 6, 7, 8, 9, 10],
+    id: [5, 6, 7, 8, 9, 10, 11],
     title: "5",
-    items: [{ id: [5, 6, 7, 8, 9, 10], title: "5" }],
+    items: [{ id: [5, 6, 7, 8, 9, 10, 11], title: "5" }],
   },
   {
-    id: [5, 6, 7, 8, 9, 10],
+    id: [5, 6, 7, 8, 9, 10, 11],
     title: "6",
-    items: [{ id: [5, 6, 7, 8, 9, 10], title: "6" }],
+    items: [{ id: [5, 6, 7, 8, 9, 10, 11], title: "6" }],
   },
   {
-    id: [5, 6, 7, 8, 9, 10],
+    id: [5, 6, 7, 8, 9, 10, 11],
     title: "7",
-    items: [{ id: [5, 6, 7, 8, 9, 10], title: "7" }],
+    items: [{ id: [5, 6, 7, 8, 9, 10, 11], title: "7" }],
   },
   {
-    id: [5, 6, 7, 8, 9, 10],
+    id: [5, 6, 7, 8, 9, 10, 11],
     title: "8",
-    items: [{ id: [5, 6, 7, 8, 9, 10], title: "8" }],
+    items: [{ id: [5, 6, 7, 8, 9, 10, 11], title: "8" }],
   },
   {
-    id: [5, 6, 7, 8, 9, 10],
+    id: [5, 6, 7, 8, 9, 10, 11],
     title: "9",
-    items: [{ id: [5, 6, 7, 8, 9, 10], title: "9" }],
+    items: [{ id: [5, 6, 7, 8, 9, 10, 11], title: "9" }],
   },
   {
-    id: [5, 6, 7, 8, 9, 10],
+    id: [5, 6, 7, 8, 9, 10, 11],
     title: "10",
-    items: [{ id: [5, 6, 7, 8, 9, 10], title: "10" }],
+    items: [{ id: [5, 6, 7, 8, 9, 10, 11], title: "10" }],
   },
   {
-    id: [11, 3],
+    id: [5, 6, 7, 8, 9, 10, 11],
     title: "11",
-    items: [{ id: [11, 3], title: "11" }],
+    items: [{ id: [5, 6, 7, 8, 9, 10, 11], title: "11" }],
   },
   {
     id: [12, 4],
     title: "12",
     items: [{ id: [12, 4], title: "12" }],
-  },
+  }
 ];
-export const board3 = [
+export const board = [
   {
     id: 1,
     title:
@@ -81,55 +80,56 @@ export const board3 = [
         title: "2",
       },
       {
-        id: [3, 11],
-        body: <img className="imgIcon" src={izvRuchn} alt="" />,
+        id: [3],
+        body: <img className="imgIcon" src={SvetOpov} alt="" />,
         title: "3",
       },
       {
         id: [12, 4],
-        body: <img className="imgIcon" src={SvetOpov} alt="" />,
+        body: <img className="imgIcon" src={izvRuchn} alt="" />,
         title: "4",
       },
       {
-        id: [5, 6, 7, 8, 9, 10],
+        id: [5, 6, 7, 8, 9, 10, 11],
         body: <img className="imgIcon" src={DimovoyToch} alt="" />,
         title: "5",
       },
       {
-        id: [5, 6, 7, 8, 9, 10],
+        id: [5, 6, 7, 8, 9, 10, 11],
         body: <img className="imgIcon" src={DimovoyToch} alt="" />,
         title: "6",
       },
       {
-        id: [5, 6, 7, 8, 9, 10],
+        id: [5, 6, 7, 8, 9, 10, 11],
         body: <img className="imgIcon" src={DimovoyToch} alt="" />,
         title: "7",
       },
       {
-        id: [5, 6, 7, 8, 9, 10],
+        id: [5, 6, 7, 8, 9, 10, 11],
         body: <img className="imgIcon" src={DimovoyToch} alt="" />,
         title: "8",
       },
       {
-        id: [5, 6, 7, 8, 9, 10],
+        id: [5, 6, 7, 8, 9, 10, 11],
         body: <img className="imgIcon" src={DimovoyToch} alt="" />,
         title: "9",
       },
       {
-        id: [5, 6, 7, 8, 9, 10],
+        id: [5, 6, 7, 8, 9, 10, 11],
         body: <img className="imgIcon" src={DimovoyToch} alt="" />,
         title: "10",
       },
       {
-        id: [11, 3],
-        body: <img className="imgIcon" src={izvRuchn} alt="" />,
+        id: [5, 6, 7, 8, 9, 10, 11],
+        body: <img className="imgIcon" src={DimovoyToch} alt="" />,
         title: "11",
       },
       {
         id: [12, 4],
-        body: <img className="imgIcon" src={SvetOpov} alt="" />,
+        body: <img className="imgIcon" src={izvRuchn} alt="" />,
         title: "12",
-      },
+      }
+
     ],
     color: null,
   },
@@ -210,4 +210,5 @@ export const board3 = [
     items: [],
     color: null,
   },
+
 ]

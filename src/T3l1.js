@@ -6,7 +6,7 @@ import net from "./sound/net.mp3";
 import da from "./sound/da.mp3";
 import { Howl } from "howler";
 
-import { board, iBoard } from "./data/2/2l1";
+import { board, iBoard } from "./data/3/3l1";
 
 
 import "./data/3/t3.scss";
@@ -146,7 +146,6 @@ function T2l1() {
             onDrop={(e) => dropCardHandler(e, board)}
           >
             {board.title}
-            {board.id}
           </div>
           {board.items.map((item, i) => (
             <div
@@ -164,7 +163,6 @@ function T2l1() {
               )}
             >
               {item.body}
-              {item.id}
             </div>
           ))}
         </div>
