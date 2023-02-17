@@ -10,9 +10,13 @@ import T4l1 from './T4l1'
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
+
+
   return (
     <div className="App">
+
       <Routes>
+        <Route path="/ops-training/" element={<T1l1 />} />
         <Route path="/ops-training/1l1" element={<T1l1 />} />
         <Route path="/ops-training/1l2" element={<T1l2 />} />
         <Route path="/ops-training/1l3" element={<T1l3 />} />
