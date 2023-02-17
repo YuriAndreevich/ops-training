@@ -10,10 +10,17 @@ import T4l1 from './T4l1'
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
+  const pathLocation = window.location == 'http://localhost:3000/ops-training/' || 'https://yuriandreevich.github.io/ops-training/'
 
+  function path(pathLocation) {
+    if (pathLocation) {
+      return <T1l1 />
+    }
+  }
 
   return (
     <div className="App">
+      {path()}
 
       <Routes>
         <Route path="/ops-training/" element={<T1l1 />} />
