@@ -3,6 +3,12 @@ import Dnd from './draw/Dnd'
 import MMenu from "./MMenu";
 import schema from "./img/schema1l3.png";
 
+import ZvukIzv from "./img/training/звуковойОповещатель.png";
+import SvetOpov from "./img/training/световойОповещатель.png";
+import DimovoyToch from "./img/training/извещательДымовойТочечный.png";
+import izvRuchn from "./img/training/извещательРучной.png";
+import Draggable from 'react-draggable';
+
 function T1l3() {
   return (
     <div className='dnd' >
@@ -11,6 +17,13 @@ function T1l3() {
         className="boardImg absolute"
         alt=""
       />
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${DimovoyToch})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+
 
       <Dnd />
       <MMenu />
