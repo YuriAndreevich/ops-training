@@ -44,10 +44,13 @@ const Dnd = () => {
       const element = document.getElementsByClassName("konvajs-content")[0].style.zIndex = -1;
 
     } else {
-      const element = document.getElementsByClassName("konvajs-content")[0].style.zIndex = 1;
+      const element = document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
 
     }
   }
+  React.useEffect(()=>{
+    document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
+  }, [])
 
 
   return (

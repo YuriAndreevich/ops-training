@@ -17,15 +17,79 @@ function T1l3() {
         className="boardImg absolute"
         alt=""
       />
+      <Dnd />
+
+      <div className='board0l0'>
       <Draggable className='draggableImg'>
         <div style={{
           background: `url(${DimovoyToch})`, backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat'
         }} className='draggableImg' />
       </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${DimovoyToch})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${DimovoyToch})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${DimovoyToch})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${DimovoyToch})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${DimovoyToch})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${izvRuchn})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${izvRuchn})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${SvetOpov})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${SvetOpov})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+      <Draggable className='draggableImg'>
+        <div style={{
+          background: `url(${ZvukIzv})`, backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat'
+        }} className='draggableImg' />
+      </Draggable>
+
+      </div>
 
 
-      <Dnd />
       <MMenu />
     </div>
   )
