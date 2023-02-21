@@ -1,7 +1,7 @@
 import React from "react";
 import Dnd from "./draw/Dnd";
 import MMenu from "./MMenu";
-import schema from "./img/schema2l3.png";
+import schema from "./img/schema4l3.png";
 
 import ZvukIzv from "./img/training/звуковойОповещатель.png";
 import SvetOpov from "./img/training/световойОповещатель.png";
@@ -9,7 +9,7 @@ import DimovoyToch from "./img/training/извещательДымовойТоч
 import izvRuchn from "./img/training/извещательРучной.png";
 import Draggable from "react-draggable";
 
-function T2l3() {
+function T4l3() {
   return (
     <div className="dnd">
       <img src={schema} className="boardImg absolute" alt="" />
@@ -133,4 +133,4 @@ function T2l3() {
   );
 }
 
-export default T2l3;
+export default T4l3;
