@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import schema from "./img/schema1.png";
+import schema from "../../img/schema3.png";
 import cx from "classnames";
-import MMenu from "./MMenu";
-import net from "./sound/net.mp3";
-import da from "./sound/da.mp3";
+import MMenu from "../../MMenu";
+import net from "../../sound/net.mp3";
+import da from "../../sound/da.mp3";
 import { Howl } from "howler";
 
-import { board, iBoard } from "./data/1/1l1";
+import { board, iBoard } from "./3l1";
 
-import "./data/1/t1.scss";
 
-function T1l1() {
+import "./t3.scss";
+
+function T2l1() {
 
 
   const [boards, setBoard] = useState(board);
@@ -119,9 +120,8 @@ function T1l1() {
         }
       }
       if (Array.isArray(arr1) && Array.isArray(arr2)) {
-        equal ? (boards[i].color = "green") : (boards[i].color = "red")
+        equal ? (boards[i].color = "green") : (boards[i].color = "red");
       }
-      console.log(equal)
 
       if (boards[i].color == "green") {
         console.log("верно");
@@ -130,14 +130,13 @@ function T1l1() {
         console.log("не верно");
         soundPlay(audioClips[0].sound);
       }
-
     }
   };
 
   return (
     <div className="dnd">
       {boards.map((board, i) => (
-        <div className={cx("absolute board board1l") + i + " " + boards[i].color}>
+        <div className={cx("absolute board board3l") + i + " " + boards[i].color}>
           <div
             className={cx(
               "board__title",
@@ -164,7 +163,6 @@ function T1l1() {
               )}
             >
               {item.body}
-
             </div>
           ))}
         </div>
@@ -182,4 +180,4 @@ function T1l1() {
   );
 }
 
-export default T1l1;
+export default T2l1;

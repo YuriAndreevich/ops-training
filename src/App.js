@@ -1,14 +1,14 @@
 import "./App.css";
-import T1l1 from "./T1l1";
-import T1l2 from "./T1l2";
-import T1l3 from "./T1l3";
-import T2l1 from "./T2l1";
-import T2l2 from "./T2l2";
-import T2l3 from "./T2l3";
-import T3l1 from "./T3l1";
-import T3l3 from "./T3l3";
-import T4l1 from "./T4l1";
-import T4l3 from "./T4l3";
+import T1l1 from "./data/1/T1l1";
+import T1l2 from "./data/1/T1l2";
+import T1l3 from "./data/1/T1l3";
+import T2l1 from "./data/2/T2l1";
+import T2l2 from "./data/2/T2l2";
+import T2l3 from "./data/2/T2l3";
+import T3l1 from "./data/3/T3l1";
+import T3l3 from "./data/3/T3l3";
+import T4l1 from "./data/4/T4l1";
+import T4l3 from "./data/4/T4l3";
 import { Route, Routes } from "react-router-dom";
 
 function App() {

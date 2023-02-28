@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import schema from "./img/schema4.png";
+import schema from "../../img/schema1.png";
 import cx from "classnames";
-import MMenu from "./MMenu";
-import net from "./sound/net.mp3";
-import da from "./sound/da.mp3";
+import MMenu from "../../MMenu";
+import net from "../../sound/net.mp3";
+import da from "../../sound/da.mp3";
 import { Howl } from "howler";
 
-import { board, iBoard } from "./data/2/2l1";
+import { board, iBoard } from "./1l1";
 
+import "./t1.scss";
 
-import "./data/4/t4.scss";
-
-function T2l1() {
+function T1l1() {
 
 
   const [boards, setBoard] = useState(board);
@@ -95,7 +94,7 @@ function T2l1() {
     setIsCheck(!isCheck);
     setIsRotate(!isRotate);
 
-    for (let i = 1; i <= 15; i++) {
+    for (let i = 1; i <= 12; i++) {
       const arr1 = board[i]?.items[0]?.id;
       const arr2 = iBoard[i]?.items[0]?.id;
 
@@ -120,8 +119,9 @@ function T2l1() {
         }
       }
       if (Array.isArray(arr1) && Array.isArray(arr2)) {
-        equal ? (boards[i].color = "green") : (boards[i].color = "red");
+        equal ? (boards[i].color = "green") : (boards[i].color = "red")
       }
+      console.log(equal)
 
       if (boards[i].color == "green") {
         console.log("верно");
@@ -130,13 +130,14 @@ function T2l1() {
         console.log("не верно");
         soundPlay(audioClips[0].sound);
       }
+
     }
   };
 
   return (
     <div className="dnd">
       {boards.map((board, i) => (
-        <div className={cx("absolute board board4l") + i + " " + boards[i].color}>
+        <div className={cx("absolute board board1l") + i + " " + boards[i].color}>
           <div
             className={cx(
               "board__title",
@@ -163,6 +164,7 @@ function T2l1() {
               )}
             >
               {item.body}
+
             </div>
           ))}
         </div>
@@ -180,4 +182,4 @@ function T2l1() {
   );
 }
 
-export default T2l1;
+export default T1l1;

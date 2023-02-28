@@ -66,13 +66,16 @@ function MMenu() {
                     <Portal>
                       <MenuList zIndex="10000">
                         <MenuItem>
-                          <Link to="/ops-training/1l1"> Уровень </Link>1
+                          <Link to="/ops-training/1l1"> Уровень 1</Link>
                         </MenuItem>
                         <MenuItem>
                           <Link to="/ops-training/1l2">Уровень 2</Link>
                         </MenuItem>
                         <MenuItem>
                           <Link to="/ops-training/1l3">Уровень 3</Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link to="/ops-training/1l4">Уровень 4</Link>
                         </MenuItem>
                       </MenuList>
                     </Portal>
@@ -92,6 +95,9 @@ function MMenu() {
                         <MenuItem>
                           <Link to="/ops-training/2l3">Уровень 3</Link>
                         </MenuItem>
+                        <MenuItem>
+                          <Link to="/ops-training/2l4">Уровень 4</Link>
+                        </MenuItem>
                       </MenuList>
                     </Portal>
                   </Menu>
@@ -110,6 +116,9 @@ function MMenu() {
                         <MenuItem>
                           <Link to="/ops-training/3l3">Уровень 3</Link>
                         </MenuItem>
+                        <MenuItem>
+                          <Link to="/ops-training/3l4">Уровень 4</Link>
+                        </MenuItem>
                       </MenuList>
                     </Portal>
                   </Menu>
@@ -127,6 +136,9 @@ function MMenu() {
                         </MenuItem>
                         <MenuItem>
                           <Link to="/ops-training/4l3">Уровень 3</Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link to="/ops-training/4l4">Уровень 4</Link>
                         </MenuItem>
                       </MenuList>
                     </Portal>

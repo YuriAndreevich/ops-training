@@ -1,18 +1,19 @@
 import React from "react";
-import Dnd from "./draw/Dnd";
-import MMenu from "./MMenu";
-import schema from "./img/schema1l3.png";
+import Dnd from "../../draw/Dnd";
+import MMenu from "../../MMenu";
+import schema from "../../img/schema3l3.png";
 
-import ZvukIzv from "./img/training/звуковойОповещатель.png";
-import SvetOpov from "./img/training/световойОповещатель.png";
-import DimovoyToch from "./img/training/извещательДымовойТочечный.png";
-import izvRuchn from "./img/training/извещательРучной.png";
+import ZvukIzv from "../../img/training/звуковойОповещатель.png";
+import SvetOpov from "../../img/training/световойОповещатель.png";
+import DimovoyToch from "../../img/training/извещательДымовойТочечный.png";
+import izvRuchn from "../../img/training/извещательРучной.png";
 import Draggable from "react-draggable";
 
-function T1l3() {
+function T3l3() {
   return (
     <div className="dnd">
       <img src={schema} className="boardImg absolute" alt="" />
+
       <Dnd />
 
       <div className="board0l0">
@@ -133,4 +134,4 @@ function T1l3() {
   );
 }
 
-export default T1l3;
+export default T3l3;

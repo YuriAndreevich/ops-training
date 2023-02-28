@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import schema from "./img/schema2.png";
+import schema from "../../img/schema2.png";
 import cx from "classnames";
-import MMenu from "./MMenu";
-import net from "./sound/net.mp3";
-import da from "./sound/da.mp3";
+import MMenu from "../../MMenu";
+import net from "../../sound/net.mp3";
+import da from "../../sound/da.mp3";
 import { Howl } from "howler";
 
-import { board, iBoard } from "./data/2/2l1";
+import { board, iBoard } from "./2l1";
 
 
-import "./data/2/t2.scss";
+import "./t2.scss";
 
 function T2l2() {
 
