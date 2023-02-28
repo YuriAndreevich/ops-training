@@ -1,5 +1,5 @@
 import React from "react";
-import Dnd from "../../draw/Dnd";
+import Dnd from "../../draw/Pen";
 import MMenu from "../../MMenu";
 import schema from "../../img/schema1l3.png";
 

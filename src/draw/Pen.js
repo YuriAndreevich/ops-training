@@ -7,7 +7,6 @@ const Dnd = () => {
   const [lines, setLines] = React.useState([]);
   const isDrawing = React.useRef(false);
   const [drowing, setDrowing] = React.useState(true)
-  const [droping, setDroping] = React.useState(false)
 
   const handleMouseDown = (e) => {
     isDrawing.current = true;
@@ -38,17 +37,7 @@ const Dnd = () => {
   React.useEffect(() => {
 
   })
-  const handleDrowing = () => {
-    setDrowing(!drowing)
-    if (drowing) {
 
-      const element = document.getElementsByClassName("konvajs-content")[0].style.zIndex = -1;
-
-    } else {
-      const element = document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
-
-    }
-  }
   React.useEffect(() => {
     document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
   }, [])
