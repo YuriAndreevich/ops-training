@@ -56,8 +56,7 @@ const Dnd = () => {
 
   return (
     <>
-      <p>Создайте систему пожарной сигнализации для данного помещения, используя предложенные технические средства</p>
-
+      <p>Соедините приборы пожарной сигнализации и подключите к ПКП</p>
       <Select
         value={tool}
         onChange={(e) => {
@@ -67,7 +66,6 @@ const Dnd = () => {
         <option value="pen">Карандаш</option>
         <option value="eraser">Стерка</option>
       </Select>
-      <button onClick={handleDrowing}>Изменить режим</button>
 
       <Stage
         width={1280}
