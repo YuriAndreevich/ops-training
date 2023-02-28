@@ -1,5 +1,4 @@
 import { Stage, Layer, Line } from "react-konva";
-import { Select } from "@chakra-ui/react";
 import React from "react";
 import EraserPNG from "../img/eraser.png";
 import PenPNG from "../img/pen.png";
@@ -37,7 +36,7 @@ const Dnd = () => {
     isDrawing.current = false;
   };
 
-  React.useEffect(() => {});
+  React.useEffect(() => { });
 
   React.useEffect(() => {
     document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;

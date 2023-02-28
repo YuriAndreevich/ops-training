@@ -40,29 +40,50 @@ const Dnd = () => {
     isDrawing.current = false;
   };
 
-  const handleDrowing = (e) => {
-    e.target.
-    setDrowing(!drowing);
-    if (drowing) {
-      const element = (document.getElementsByClassName(
-        "konvajs-content"
-      )[0].style.zIndex = -1);
-    } else {
+  React.useEffect(() => {
+    const element = (document.getElementsByClassName(
+      "konvajs-content"
+    )[0].style.zIndex = 200);
+  }, []);
+
+  const [active, setActive] = React.useState('pen')
+
+  const handleActive = (e) => {
+    setActive(e)
+    if (active == 'grab') {
+      if (drowing) {
+        const element = (document.getElementsByClassName(
+          "konvajs-content"
+        )[0].style.zIndex = -1);
+        console.log(element)
+      } else {
+        const element = (document.getElementsByClassName(
+          "konvajs-content"
+        )[0].style.zIndex = 200);
+      }
+    }
+    else if (active == 'pen') {
+
+      setTool('pen')
       const element = (document.getElementsByClassName(
         "konvajs-content"
       )[0].style.zIndex = 200);
     }
-  };
-  React.useEffect(() => {
-    document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
-  }, []);
-  
-  const [active, setActive] = React.useState(1)
-  const handleActive = () =>{
-    setActive(!active)
+    else if (active == 'eraser') {
+      setTool('eraser')
+      const element = (document.getElementsByClassName(
+        "konvajs-content"
+      )[0].style.zIndex = 200)
+    }
   }
+  // const handleClass = (e) => {
+  //   e.target.value == active
+  // }
+
+
   return (
     <>
+
       <Stage
         width={1280}
         height={700}
@@ -93,20 +114,10 @@ const Dnd = () => {
         предложенные технические средства
       </p>
       <div className="toolsBlock">
-<img className="tools" onClick={handleActive} src={EraserPNG} alt=''/>
-<img className="tools" onClick={handleActive} src={PenPNG} alt=''/>
-<img className="tools" onClick={handleActive} src={GrabPNG} alt=''/>
-</div>
-      {/* <Select
-        value={tool}
-        onChange={(e) => {
-          setTool(e.target.value);
-        }}
-      >
-        <option value="pen">Карандаш</option>
-        <option value="eraser">Стерка</option>
-      </Select>
-      <button onClick={handleDrowing}>Изменить режим</button> */}
+        <img className={`tools ${active == 'eraser' && 'active'}`} onClick={(e) => { handleActive('eraser') }} src={EraserPNG} alt='' />
+        <img className={`tools ${active == 'pen' && 'active'}`} onClick={(e) => { handleActive('pen') }} src={PenPNG} alt='' />
+        <img className={`tools ${active == 'grab' && 'active'}`} onClick={(e) => { handleActive('grab') }} src={GrabPNG} alt='' />
+      </div>
     </>
   );
 };
