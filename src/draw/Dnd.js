@@ -1,13 +1,18 @@
 import { Stage, Layer, Line } from "react-konva";
-import { Select } from "@chakra-ui/react";
 import React from "react";
+import EraserPNG from '../img/eraser.png'
+import PenPNG from '../img/pen.png'
+import './draw.scss'
+
+import GrabPNG from '../img/grab.png'
+
 
 const Dnd = () => {
-  const [tool, setTool] = React.useState('pen');
+  const [tool, setTool] = React.useState("pen");
   const [lines, setLines] = React.useState([]);
   const isDrawing = React.useRef(false);
-  const [drowing, setDrowing] = React.useState(true)
-  const [droping, setDroping] = React.useState(false)
+  const [drowing, setDrowing] = React.useState(true);
+  const [droping, setDroping] = React.useState(false);
 
   const handleMouseDown = (e) => {
     isDrawing.current = true;
@@ -35,51 +40,37 @@ const Dnd = () => {
     isDrawing.current = false;
   };
 
-  React.useEffect(() => {
-
-  })
-  const handleDrowing = () => {
-    setDrowing(!drowing)
+  const handleDrowing = (e) => {
+    e.target.
+    setDrowing(!drowing);
     if (drowing) {
-
-      const element = document.getElementsByClassName("konvajs-content")[0].style.zIndex = -1;
-
+      const element = (document.getElementsByClassName(
+        "konvajs-content"
+      )[0].style.zIndex = -1);
     } else {
-      const element = document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
-
+      const element = (document.getElementsByClassName(
+        "konvajs-content"
+      )[0].style.zIndex = 200);
     }
-  }
+  };
   React.useEffect(() => {
     document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
-  }, [])
-
-
+  }, []);
+  
+  const [active, setActive] = React.useState(1)
+  const handleActive = () =>{
+    setActive(!active)
+  }
   return (
     <>
-      <p>Создайте систему пожарной сигнализации для данного помещения, используя предложенные технические средства</p>
-
-      <Select
-        value={tool}
-        onChange={(e) => {
-          setTool(e.target.value);
-        }}
-      >
-        <option value="pen">Карандаш</option>
-        <option value="eraser">Стерка</option>
-      </Select>
-      <button onClick={handleDrowing}>Изменить режим</button>
-
       <Stage
         width={1280}
         height={700}
         onMouseDown={drowing && handleMouseDown}
         onMousemove={handleMouseMove}
         onMouseup={handleMouseUp}
-
-
       >
-        <Layer
-        >
+        <Layer>
           {lines.map((line, i) => (
             <Line
               key={i}
@@ -97,7 +88,25 @@ const Dnd = () => {
         </Layer>
       </Stage>
 
-
+      <p style={{ fontSize: "1.5rem", fontWeight: "700" }}>
+        Создайте систему пожарной сигнализации для данного помещения, используя
+        предложенные технические средства
+      </p>
+      <div className="toolsBlock">
+<img className="tools" onClick={handleActive} src={EraserPNG} alt=''/>
+<img className="tools" onClick={handleActive} src={PenPNG} alt=''/>
+<img className="tools" onClick={handleActive} src={GrabPNG} alt=''/>
+</div>
+      {/* <Select
+        value={tool}
+        onChange={(e) => {
+          setTool(e.target.value);
+        }}
+      >
+        <option value="pen">Карандаш</option>
+        <option value="eraser">Стерка</option>
+      </Select>
+      <button onClick={handleDrowing}>Изменить режим</button> */}
     </>
   );
 };

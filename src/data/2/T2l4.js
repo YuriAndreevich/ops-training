@@ -1,7 +1,7 @@
 import React from "react";
 import Dnd from "../../draw/Dnd";
 import MMenu from "../../MMenu";
-import schema from "../../img/schema2l3.png";
+import schema from "../../img/schema4l3.png";
 
 import ZvukIzv from "../../img/training/звуковойОповещатель.png";
 import SvetOpov from "../../img/training/световойОповещатель.png";
@@ -9,7 +9,7 @@ import DimovoyToch from "../../img/training/извещательДымовойТ
 import izvRuchn from "../../img/training/извещательРучной.png";
 import Draggable from "react-draggable";
 
-function T2l3() {
+function T2l4() {
   return (
     <div className="dnd">
       <img src={schema} className="boardImg absolute" alt="" />
@@ -79,7 +79,27 @@ function T2l3() {
         <Draggable className="draggableImg">
           <div
             style={{
-              background: `url(${izvRuchn})`,
+              background: `url(${DimovoyToch})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable>
+        <Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${DimovoyToch})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable>
+        <Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${DimovoyToch})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
             }}
@@ -133,4 +153,4 @@ function T2l3() {
   );
 }
 
-export default T2l3;
+export default T2l4;

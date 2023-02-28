@@ -1,7 +1,7 @@
 import React from "react";
 import Dnd from "../../draw/Dnd";
 import MMenu from "../../MMenu";
-import schema from "../../img/schema1l3.png";
+import schema from "../../img/schema1l4.png";
 
 import ZvukIzv from "../../img/training/звуковойОповещатель.png";
 import SvetOpov from "../../img/training/световойОповещатель.png";

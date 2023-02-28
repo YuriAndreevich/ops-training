@@ -9,9 +9,7 @@ function T4l3() {
       <img src={schema} className="boardImg absolute" alt="" />
       <Dnd />
 
-      <div className="board0l0">
-
-      </div>
+      <div className="board0l0"></div>
 
       <MMenu />
     </div>

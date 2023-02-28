@@ -1,0 +1,16 @@
+.toolsBlock {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+}
+
+.tools {
+    width: 40px;
+    height: 40px;
+
+    &.active {
+        background: rgb(17, 148, 57);
+        border-radius: 15px;
+    }
+}

@@ -1,12 +1,15 @@
 import { Stage, Layer, Line } from "react-konva";
 import { Select } from "@chakra-ui/react";
 import React from "react";
+import EraserPNG from "../img/eraser.png";
+import PenPNG from "../img/pen.png";
+import "./draw.scss";
 
 const Dnd = () => {
-  const [tool, setTool] = React.useState('pen');
+  const [tool, setTool] = React.useState("pen");
   const [lines, setLines] = React.useState([]);
   const isDrawing = React.useRef(false);
-  const [drowing, setDrowing] = React.useState(true)
+  const [drowing, setDrowing] = React.useState(true);
 
   const handleMouseDown = (e) => {
     isDrawing.current = true;
@@ -34,19 +37,15 @@ const Dnd = () => {
     isDrawing.current = false;
   };
 
-  React.useEffect(() => {
-
-  })
+  React.useEffect(() => {});
 
   React.useEffect(() => {
     document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
-  }, [])
-
+  }, []);
 
   return (
     <>
-      <p>Соедините приборы пожарной сигнализации и подключите к ПКП</p>
-      <Select
+      {/* <Select
         value={tool}
         onChange={(e) => {
           setTool(e.target.value);
@@ -54,7 +53,7 @@ const Dnd = () => {
       >
         <option value="pen">Карандаш</option>
         <option value="eraser">Стерка</option>
-      </Select>
+      </Select> */}
 
       <Stage
         width={1280}
@@ -62,11 +61,8 @@ const Dnd = () => {
         onMouseDown={drowing && handleMouseDown}
         onMousemove={handleMouseMove}
         onMouseup={handleMouseUp}
-
-
       >
-        <Layer
-        >
+        <Layer>
           {lines.map((line, i) => (
             <Line
               key={i}
@@ -83,8 +79,13 @@ const Dnd = () => {
           ))}
         </Layer>
       </Stage>
-
-
+      <p style={{ fontSize: "1.5rem", fontWeight: "700" }}>
+        Соедините приборы пожарной сигнализации и подключите к ПКП
+      </p>
+      <div className="toolsBlock">
+        <img className="tools" src={EraserPNG} alt="" />
+        <img className="tools" src={PenPNG} alt="" />
+      </div>
     </>
   );
 };

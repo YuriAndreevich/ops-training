@@ -79,7 +79,27 @@ function T4l3() {
         <Draggable className="draggableImg">
           <div
             style={{
-              background: `url(${izvRuchn})`,
+              background: `url(${DimovoyToch})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable>
+        <Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${DimovoyToch})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable>
+        <Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${DimovoyToch})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
             }}
