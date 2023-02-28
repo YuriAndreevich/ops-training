@@ -12,7 +12,6 @@ import Draggable from "react-draggable";
 function T1l3() {
   return (
     <div className="dnd">
-
       <img src={schema} className="boardImg absolute" alt="" />
       <Dnd />
 
@@ -127,7 +126,6 @@ function T1l3() {
             className="draggableImg"
           />
         </Draggable>
-
       </div>
 
       <MMenu />
