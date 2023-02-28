@@ -6,7 +6,7 @@ import net from "../../sound/net.mp3";
 import da from "../../sound/da.mp3";
 import { Howl } from "howler";
 
-import { board, iBoard } from "./2l1";
+import { board, iBoard } from "./2l2";
 
 
 import "./t2.scss";

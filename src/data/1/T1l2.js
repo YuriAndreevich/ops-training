@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import schema from "../../img/schema1.png";
+import schema from "../../img/schema1l2.png";
 import cx from "classnames";
 import MMenu from "../../MMenu";
 import net from "../../sound/net.mp3";
 import da from "../../sound/da.mp3";
 import { Howl } from "howler";
 
-import { board, iBoard } from "./1l1";
+import { board, iBoard } from "./1l2";
 
 import "./t1.scss";
 
@@ -94,7 +94,7 @@ function T1l1() {
     setIsCheck(!isCheck);
     setIsRotate(!isRotate);
 
-    for (let i = 1; i <= 12; i++) {
+    for (let i = 1; i <= 16; i++) {
       const arr1 = board[i]?.items[0]?.id;
       const arr2 = iBoard[i]?.items[0]?.id;
 
