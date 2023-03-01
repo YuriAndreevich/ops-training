@@ -12,7 +12,6 @@ const Dnd = () => {
   const [lines, setLines] = React.useState([]);
   const isDrawing = React.useRef(false);
   const [drowing, setDrowing] = React.useState(true);
-  const [droping, setDroping] = React.useState(false);
 
   const handleMouseDown = (e) => {
     isDrawing.current = true;
@@ -40,45 +39,40 @@ const Dnd = () => {
     isDrawing.current = false;
   };
 
-  React.useEffect(() => {
-    const element = (document.getElementsByClassName(
-      "konvajs-content"
-    )[0].style.zIndex = 200);
-  }, []);
-
-  const [active, setActive] = React.useState('pen')
+  // React.useEffect(() => {
+  //   const element = (document.getElementsByClassName(
+  //     "konvajs-content"
+  //   )[0].style.zIndex = 200);
+  // }, []);
+  const element = (document.getElementsByClassName("konvajs-content"));
 
   const handleActive = (e) => {
-    setActive(e)
-    if (active == 'grab') {
-      if (drowing) {
-        const element = (document.getElementsByClassName(
-          "konvajs-content"
-        )[0].style.zIndex = -1);
-        console.log(element)
+    setTool(e)
+      (tool == 'pen') && setTool('pen')
+        (tool == 'eraser') && setTool('eraser')
+
+    if (tool == 'grab') {
+    }
+
+
+
+
+  }
+
+
+  React.useEffect(() => {
+    document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
+    const handleDrowing = () => {
+      if (tool == 'grab') {
+        const element = document.getElementsByClassName("konvajs-content")[0].style.zIndex = -1;
       } else {
-        const element = (document.getElementsByClassName(
-          "konvajs-content"
-        )[0].style.zIndex = 200);
+        const element = document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
       }
     }
-    else if (active == 'pen') {
-
-      setTool('pen')
-      const element = (document.getElementsByClassName(
-        "konvajs-content"
-      )[0].style.zIndex = 200);
-    }
-    else if (active == 'eraser') {
-      setTool('eraser')
-      const element = (document.getElementsByClassName(
-        "konvajs-content"
-      )[0].style.zIndex = 200)
-    }
-  }
-  // const handleClass = (e) => {
-  //   e.target.value == active
-  // }
+    handleDrowing()
+  }, [tool])
+  console.log(tool)
+  console.log(element)
 
 
   return (
@@ -114,9 +108,9 @@ const Dnd = () => {
         предложенные технические средства
       </p>
       <div className="toolsBlock">
-        <img className={`tools ${active == 'eraser' && 'active'}`} onClick={(e) => { handleActive('eraser') }} src={EraserPNG} alt='' />
-        <img className={`tools ${active == 'pen' && 'active'}`} onClick={(e) => { handleActive('pen') }} src={PenPNG} alt='' />
-        <img className={`tools ${active == 'grab' && 'active'}`} onClick={(e) => { handleActive('grab') }} src={GrabPNG} alt='' />
+        <img className={`tools ${tool == 'eraser' && 'active'}`} onClick={(e) => { handleActive('eraser') }} src={EraserPNG} alt='' />
+        <img className={`tools ${tool == 'pen' && 'active'}`} onClick={(e) => { handleActive('pen') }} src={PenPNG} alt='' />
+        <img className={`tools ${tool == 'grab' && 'active'}`} onClick={(e) => { handleActive('grab') }} src={GrabPNG} alt='' />
       </div>
     </>
   );

@@ -38,22 +38,21 @@ const Dnd = () => {
 
   React.useEffect(() => { });
 
-  React.useEffect(() => {
-    document.getElementsByClassName("konvajs-content")[0].style.zIndex = 200;
-  }, []);
+  const [active, setActive] = React.useState('pen')
+
+  const handleActive = (e) => {
+    setTool(e)
+
+      (tool == 'pen') && setTool('pen')
+        (tool == 'eraser') && setTool('eraser')
+
+
+  }
+  console.log(tool)
+
 
   return (
     <>
-      {/* <Select
-        value={tool}
-        onChange={(e) => {
-          setTool(e.target.value);
-        }}
-      >
-        <option value="pen">Карандаш</option>
-        <option value="eraser">Стерка</option>
-      </Select> */}
-
       <Stage
         width={1280}
         height={700}
@@ -82,8 +81,8 @@ const Dnd = () => {
         Соедините приборы пожарной сигнализации и подключите к ПКП
       </p>
       <div className="toolsBlock">
-        <img className="tools" src={EraserPNG} alt="" />
-        <img className="tools" src={PenPNG} alt="" />
+        <img className={`tools ${tool == 'eraser' && 'active'}`} onClick={(e) => { handleActive('eraser') }} src={EraserPNG} alt='' />
+        <img className={`tools ${tool == 'pen' && 'active'}`} onClick={(e) => { handleActive('pen') }} src={PenPNG} alt='' />
       </div>
     </>
   );

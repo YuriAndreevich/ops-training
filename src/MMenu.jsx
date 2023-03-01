@@ -155,6 +155,22 @@ function MMenu() {
                       </MenuList>
                     </Portal>
                   </Menu>
+                  <Menu>
+                    <MenuButton className="menu-training-card">
+                      Задание 5
+                    </MenuButton>
+                    <Portal>
+                      <MenuList zIndex="10000">
+                        <Link to="/ops-training/5l1">
+                          <MenuItem>Уровень 1</MenuItem>
+                        </Link>
+
+                        <Link to="/ops-training/5l2">
+                          <MenuItem>Уровень 2</MenuItem>
+                        </Link>
+                      </MenuList>
+                    </Portal>
+                  </Menu>
                 </div>
               </TabPanel>
               <TabPanel>

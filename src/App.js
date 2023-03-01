@@ -15,6 +15,8 @@ import T4l1 from "./data/4/T4l1";
 import T4l2 from "./data/4/T4l2";
 import T4l3 from "./data/4/T4l3";
 import T4l4 from "./data/4/T4l4";
+import T5l1 from "./data/5/T5l1";
+import T5l2 from "./data/5/T5l2";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -48,6 +50,8 @@ function App() {
         <Route path="/ops-training/4l2" element={<T4l2 />} />
         <Route path="/ops-training/4l3" element={<T4l3 />} />
         <Route path="/ops-training/4l4" element={<T4l4 />} />
+        <Route path="/ops-training/5l1" element={<T5l1 />} />
+        <Route path="/ops-training/5l2" element={<T5l2 />} />
       </Routes>
     </div>
   );
