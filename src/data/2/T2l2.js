@@ -146,7 +146,6 @@ function T2l2() {
             onDrop={(e) => dropCardHandler(e, board)}
           >
             {board.title}
-            {board.id}
           </div>
           {board.items.map((item, i) => (
             <div
@@ -164,7 +163,6 @@ function T2l2() {
               )}
             >
               {item.body}
-              {item.id}
             </div>
           ))}
         </div>

@@ -3,6 +3,8 @@ import ZvukIzv from "../../img/training/звуковойОповещатель.p
 import SvetOpov from "../../img/training/световойОповещатель.png";
 import DimovoyToch from "../../img/training/извещательДымовойТочечный.png";
 import izvRuchn from "../../img/training/извещательРучной.png";
+import okonRezistr from "../../img/training/оконечныйРезистор.png";
+
 
 export const iBoard = [
   {
@@ -67,6 +69,17 @@ export const iBoard = [
     title: "12",
     items: [{ id: [12, 4], title: "12" }],
   }
+  ,
+  {
+    id: [13, 14],
+    title: "13",
+    items: [{ id: [13, 14], title: "13" }],
+  },
+  {
+    id: [13, 14],
+    title: "14",
+    items: [{ id: [13, 14], title: "14" }],
+  }
 ];
 export const board = [
   {
@@ -128,6 +141,18 @@ export const board = [
         id: [12, 4],
         body: <img className="imgIcon" src={izvRuchn} alt="" />,
         title: "12",
+
+      },
+      {
+        id: [13, 14],
+        body: <img className="imgIcon" src={okonRezistr} alt="" />,
+        title: "13",
+
+      },
+      {
+        id: [13, 14],
+        body: <img className="imgIcon" src={okonRezistr} alt="" />,
+        title: "14",
       }
 
     ],
@@ -205,6 +230,20 @@ export const board = [
   },
   {
     id: 12,
+    title: <img src={strelaSVG} alt="" className="strelka" />,
+
+    items: [],
+    color: null,
+  },
+  {
+    id: 13,
+    title: <img src={strelaSVG} alt="" className="strelka" />,
+
+    items: [],
+    color: null,
+  },
+  {
+    id: 14,
     title: <img src={strelaSVG} alt="" className="strelka" />,
 
     items: [],
