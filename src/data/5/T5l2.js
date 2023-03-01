@@ -10,11 +10,11 @@ import DimovoyToch from "../../img/training/извещательДымовойТ
 import izvRuchn from "../../img/training/извещательРучной.png";
 import Draggable from "react-draggable";
 
-function T4l3() {
+function T5l2() {
   return (
     <div className="dnd">
-      <img src={schema} className="boardImg absolute" alt="" />
-      <Dnd />
+      <img style={{width:'90%'}} src={schema} className="boardImg absolute" alt="" />
+      <Dnd margin='150px'/>
 
       <div className="board0l0">
         <Draggable className="draggableImg">
@@ -120,7 +120,7 @@ function T4l3() {
         <Draggable className="draggableImg">
           <div
             style={{
-              background: `url(${SvetOpov})`,
+              background: `url(${izvRuchn})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
             }}
@@ -130,23 +130,158 @@ function T4l3() {
         <Draggable className="draggableImg">
           <div
             style={{
-              background: `url(${SvetOpov})`,
+              background: `url(${izvRuchn})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
             }}
             className="draggableImg"
           />
-        </Draggable>
-        <Draggable className="draggableImg">
+        </Draggable><Draggable className="draggableImg">
           <div
             style={{
-              background: `url(${ZvukIzv})`,
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable><Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${izvRuchn})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
             }}
             className="draggableImg"
           />
         </Draggable>
+        
       </div>
 
       <MMenu />
@@ -154,4 +289,4 @@ function T4l3() {
   );
 }
 
-export default T4l3;
+export default T5l2;

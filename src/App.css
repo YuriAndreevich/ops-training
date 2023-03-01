@@ -37,3 +37,10 @@
 }
 
 .draggableImg{ width: 30px;}
+.bigBoard{
+  width: 90%;
+}
+.metodSopr{
+  height: 61vh;
+  overflow: scroll;
+}

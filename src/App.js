@@ -21,7 +21,7 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   const pathLocation =
-    window.location == "http://localhost:3000/ops-training/" ||
+    window.location == "http://localhost:3000" ||
     "https://ops-training.sava.site/";
 
   function path(pathLocation) {
@@ -33,25 +33,25 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/ops-training/" element={<T1l1 />} />
-        <Route path="/ops-training/1l1" element={<T1l1 />} />
-        <Route path="/ops-training/1l2" element={<T1l2 />} />
-        <Route path="/ops-training/1l3" element={<T1l3 />} />
-        <Route path="/ops-training/1l4" element={<T1l4 />} />
-        <Route path="/ops-training/2l1" element={<T2l1 />} />
-        <Route path="/ops-training/2l2" element={<T2l2 />} />
-        <Route path="/ops-training/2l3" element={<T2l3 />} />
-        <Route path="/ops-training/2l4" element={<T2l4 />} />
-        <Route path="/ops-training/3l1" element={<T3l1 />} />
-        <Route path="/ops-training/3l2" element={<T3l2 />} />
-        <Route path="/ops-training/3l3" element={<T3l3 />} />
-        <Route path="/ops-training/3l4" element={<T3l4 />} />
-        <Route path="/ops-training/4l1" element={<T4l1 />} />
-        <Route path="/ops-training/4l2" element={<T4l2 />} />
-        <Route path="/ops-training/4l3" element={<T4l3 />} />
-        <Route path="/ops-training/4l4" element={<T4l4 />} />
-        <Route path="/ops-training/5l1" element={<T5l1 />} />
-        <Route path="/ops-training/5l2" element={<T5l2 />} />
+        <Route path="" element={<T1l1 />} />
+        <Route path="1l1" element={<T1l1 />} />
+        <Route path="1l2" element={<T1l2 />} />
+        <Route path="1l3" element={<T1l3 />} />
+        <Route path="1l4" element={<T1l4 />} />
+        <Route path="2l1" element={<T2l1 />} />
+        <Route path="2l2" element={<T2l2 />} />
+        <Route path="2l3" element={<T2l3 />} />
+        <Route path="2l4" element={<T2l4 />} />
+        <Route path="3l1" element={<T3l1 />} />
+        <Route path="3l2" element={<T3l2 />} />
+        <Route path="3l3" element={<T3l3 />} />
+        <Route path="3l4" element={<T3l4 />} />
+        <Route path="4l1" element={<T4l1 />} />
+        <Route path="4l2" element={<T4l2 />} />
+        <Route path="4l3" element={<T4l3 />} />
+        <Route path="4l4" element={<T4l4 />} />
+        <Route path="5l1" element={<T5l1 />} />
+        <Route path="5l2" element={<T5l2 />} />
       </Routes>
     </div>
   );

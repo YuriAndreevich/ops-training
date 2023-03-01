@@ -4,7 +4,7 @@ import EraserPNG from "../img/eraser.png";
 import PenPNG from "../img/pen.png";
 import "./draw.scss";
 
-const Dnd = () => {
+const Dnd = (props) => {
   const [tool, setTool] = React.useState("pen");
   const [lines, setLines] = React.useState([]);
   const isDrawing = React.useRef(false);
@@ -36,23 +36,19 @@ const Dnd = () => {
     isDrawing.current = false;
   };
 
-  React.useEffect(() => { });
+  React.useEffect(() => {});
 
-  const [active, setActive] = React.useState('pen')
+  const [active, setActive] = React.useState("pen");
 
   const handleActive = (e) => {
-    setTool(e)
-
-      (tool == 'pen') && setTool('pen')
-        (tool == 'eraser') && setTool('eraser')
-
-
-  }
-  console.log(tool)
-
+    setTool(e)(tool == "pen") &&
+      setTool("pen")(tool == "eraser") &&
+      setTool("eraser");
+  };
+  console.log(tool);
 
   return (
-    <>
+    <div style={{ marginTop: props.margin }}>
       <Stage
         width={1280}
         height={700}
@@ -81,10 +77,24 @@ const Dnd = () => {
         Соедините приборы пожарной сигнализации и подключите к ПКП
       </p>
       <div className="toolsBlock">
-        <img className={`tools ${tool == 'eraser' && 'active'}`} onClick={(e) => { handleActive('eraser') }} src={EraserPNG} alt='' />
-        <img className={`tools ${tool == 'pen' && 'active'}`} onClick={(e) => { handleActive('pen') }} src={PenPNG} alt='' />
+        <img
+          className={`tools ${tool == "eraser" && "active"}`}
+          onClick={(e) => {
+            handleActive("eraser");
+          }}
+          src={EraserPNG}
+          alt=""
+        />
+        <img
+          className={`tools ${tool == "pen" && "active"}`}
+          onClick={(e) => {
+            handleActive("pen");
+          }}
+          src={PenPNG}
+          alt=""
+        />
       </div>
-    </>
+    </div>
   );
 };
 

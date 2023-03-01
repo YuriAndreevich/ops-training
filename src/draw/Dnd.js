@@ -7,7 +7,7 @@ import './draw.scss'
 import GrabPNG from '../img/grab.png'
 
 
-const Dnd = () => {
+const Dnd = (props) => {
   const [tool, setTool] = React.useState("pen");
   const [lines, setLines] = React.useState([]);
   const isDrawing = React.useRef(false);
@@ -76,7 +76,7 @@ const Dnd = () => {
 
 
   return (
-    <>
+    <div style={{marginTop:props.margin}}>
 
       <Stage
         width={1280}
@@ -112,7 +112,7 @@ const Dnd = () => {
         <img className={`tools ${tool == 'pen' && 'active'}`} onClick={(e) => { handleActive('pen') }} src={PenPNG} alt='' />
         <img className={`tools ${tool == 'grab' && 'active'}`} onClick={(e) => { handleActive('grab') }} src={GrabPNG} alt='' />
       </div>
-    </>
+    </div>
   );
 };
 
