@@ -146,6 +146,7 @@ function T2l1() {
             onDrop={(e) => dropCardHandler(e, board)}
           >
             {board.title}
+            
           </div>
           {board.items.map((item, i) => (
             <div
