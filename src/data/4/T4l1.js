@@ -95,7 +95,7 @@ function T2l1() {
     setIsCheck(!isCheck);
     setIsRotate(!isRotate);
 
-    for (let i = 1; i <= 18 ; i++) {
+    for (let i = 1; i <= 17; i++) {
       const arr1 = board[i]?.items[0]?.id;
       const arr2 = iBoard[i]?.items[0]?.id;
 
@@ -146,7 +146,6 @@ function T2l1() {
             onDrop={(e) => dropCardHandler(e, board)}
           >
             {board.title}
-            {board.id}
           </div>
           {board.items.map((item, i) => (
             <div
@@ -164,7 +163,6 @@ function T2l1() {
               )}
             >
               {item.body}
-              {item.id}
             </div>
           ))}
         </div>

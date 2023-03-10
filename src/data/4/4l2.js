@@ -297,7 +297,7 @@ export const board = [
     color: null,
   },
   {
-    id: 17,
+    id: 18,
     title: <img src={strelaSVG} alt="" className="strelka" />,
 
     items: [],
