@@ -14,7 +14,7 @@ function T5l2() {
   return (
     <div className="dnd">
       <img style={{width:'90%'}} src={schema} className="boardImg absolute" alt="" />
-      <Dnd margin='150px'/>
+      <Dnd />
 
       <div className="board0l0">
         <Draggable className="draggableImg">

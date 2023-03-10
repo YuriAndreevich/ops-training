@@ -8,12 +8,9 @@ import { Howl } from "howler";
 
 import { board, iBoard } from "./4l1";
 
-
 import "./t4.scss";
 
 function T2l1() {
-
-
   const [boards, setBoard] = useState(board);
 
   function soundPlay(src) {
@@ -136,7 +133,9 @@ function T2l1() {
   return (
     <div className="dnd">
       {boards.map((board, i) => (
-        <div className={cx("absolute board board4l") + i + " " + boards[i].color}>
+        <div
+          className={cx("absolute board board4l") + i + " " + boards[i].color}
+        >
           <div
             className={cx(
               "board__title",
@@ -146,7 +145,6 @@ function T2l1() {
             onDrop={(e) => dropCardHandler(e, board)}
           >
             {board.title}
-            {board.id}
           </div>
           {board.items.map((item, i) => (
             <div
@@ -164,7 +162,6 @@ function T2l1() {
               )}
             >
               {item.body}
-              {item.id}
             </div>
           ))}
         </div>
@@ -173,11 +170,7 @@ function T2l1() {
         Проверка
       </button>
       <MMenu />
-      <img
-        src={schema}
-        className="boardImg absolute"
-        alt=""
-      />
+      <img src={schema} className="boardImg absolute" alt="" />
     </div>
   );
 }

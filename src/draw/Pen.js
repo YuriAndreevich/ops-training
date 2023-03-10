@@ -51,7 +51,7 @@ const Dnd = (props) => {
     <div style={{ marginTop: props.margin }}>
       <Stage
         width={1280}
-        height={700}
+        height={750}
         onMouseDown={drowing && handleMouseDown}
         onMousemove={handleMouseMove}
         onMouseup={handleMouseUp}

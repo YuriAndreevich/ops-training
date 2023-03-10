@@ -80,7 +80,7 @@ const Dnd = (props) => {
 
       <Stage
         width={1280}
-        height={700}
+        height={750}
         onMouseDown={drowing && handleMouseDown}
         onMousemove={handleMouseMove}
         onMouseup={handleMouseUp}

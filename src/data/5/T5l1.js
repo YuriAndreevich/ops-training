@@ -8,7 +8,7 @@ function T5l1() {
         <div className="dnd">
 
             <img  style={{width:'90%'}} src={schema} className="boardImg absolute bigBoard" alt="" />
-            <Dnd margin='150px'/>
+            <Dnd />
             <div className="board0l0">
             </div>
             <MMenu />
