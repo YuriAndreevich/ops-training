@@ -94,7 +94,7 @@ function T1l1() {
     setIsCheck(!isCheck);
     setIsRotate(!isRotate);
 
-    for (let i = 1; i <= 16; i++) {
+    for (let i = 1; i <= 14; i++) {
       const arr1 = board[i]?.items[0]?.id;
       const arr2 = iBoard[i]?.items[0]?.id;
 
