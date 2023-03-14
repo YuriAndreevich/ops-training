@@ -8,6 +8,8 @@ import SvetOpov from "../../img/training/световойОповещатель.
 import DimovoyToch from "../../img/training/извещательДымовойТочечный.png";
 import izvRuchn from "../../img/training/извещательРучной.png";
 import Draggable from "react-draggable";
+import schema2 from "../../img/2зад.png";
+import ModalComponent from "../Modal";
 
 function T2l4() {
   return (
@@ -147,6 +149,7 @@ function T2l4() {
           />
         </Draggable>
       </div>
+      <ModalComponent src={schema2} />
 
       <MMenu />
     </div>

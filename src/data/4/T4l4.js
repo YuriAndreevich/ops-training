@@ -8,6 +8,8 @@ import SvetOpov from "../../img/training/световойОповещатель.
 import DimovoyToch from "../../img/training/извещательДымовойТочечный.png";
 import izvRuchn from "../../img/training/извещательРучной.png";
 import Draggable from "react-draggable";
+import schema2 from "../../img/3зад.png";
+import ModalComponent from "../Modal";
 
 function T4l3() {
   return (
@@ -67,6 +69,15 @@ function T4l3() {
           />
         </Draggable>
         <Draggable className="draggableImg">
+          <div
+            style={{
+              background: `url(${DimovoyToch})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="draggableImg"
+          />
+        </Draggable>        <Draggable className="draggableImg">
           <div
             style={{
               background: `url(${DimovoyToch})`,
@@ -147,6 +158,7 @@ function T4l3() {
           />
         </Draggable>
       </div>
+      <ModalComponent src={schema2} />
 
       <MMenu />
     </div>
