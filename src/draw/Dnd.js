@@ -6,7 +6,6 @@ import './draw.scss'
 
 import GrabPNG from '../img/grab.png'
 
-
 const Dnd = (props) => {
   const [tool, setTool] = React.useState("pen");
   const [lines, setLines] = React.useState([]);
