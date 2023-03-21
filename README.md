@@ -1,3 +1,7 @@
+import schema2 from "../../img/3зад.png";
+import ModalComponent from "../Modal";
+<ModalComponent src={schema2} />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import schema from "../../img/schema3.png";
+import schema from "../../img/schema3l2.jpg";
 import cx from "classnames";
 import MMenu from "../../MMenu";
 import net from "../../sound/net.mp3";
