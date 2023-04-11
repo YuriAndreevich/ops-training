@@ -8,7 +8,7 @@ import SvetOpov from "../../img/training/световойОповещатель.
 import DimovoyToch from "../../img/training/извещательДымовойТочечный.png";
 import izvRuchn from "../../img/training/извещательРучной.png";
 import Draggable from "react-draggable";
-import schema2 from "../../img/3зад.png";
+import schema2 from "../../img/4зад.png";
 import ModalComponent from "../Modal";
 
 function T4l3() {

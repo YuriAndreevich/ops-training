@@ -2,7 +2,7 @@ import React from "react";
 import Dnd from "../../draw/Pen";
 import MMenu from "../../MMenu";
 import schema from "../../img/schema4l3.png";
-import schema2 from "../../img/3зад.png";
+import schema2 from "../../img/4зад.png";
 import ModalComponent from "../Modal";
 function T4l3() {
   return (
