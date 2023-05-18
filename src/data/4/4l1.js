@@ -3,6 +3,8 @@ import ZvukIzv from "../../img/training/звуковойОповещатель.p
 import SvetOpov from "../../img/training/световойОповещатель.png";
 import DimovoyToch from "../../img/training/извещательДымовойТочечный.png";
 import izvRuchn from "../../img/training/извещательРучной.png";
+import okonRezistr from "../../img/training/оконечныйРезистор.png";
+
 
 export const iBoard = [
   {
@@ -77,12 +79,32 @@ export const iBoard = [
     title: "14",
     items: [{ id: [5, 6, 7, 8, 9, 10, 13, 14, 15, 16], title: "14" }],
   },
+  {
+    id: [5, 6, 7, 8, 9, 10, 13, 14, 15, 16],
+    title: "15",
+    items: [{ id: [5, 6, 7, 8, 9, 10, 13, 14, 15, 16], title: "15" }],
+  },
+  {
+    id: [5, 6, 7, 8, 9, 10, 13, 14, 15, 16],
+    title: "16",
+    items: [{ id: [5, 6, 7, 8, 9, 10, 13, 14, 15, 16], title: "16" }],
+  },
+  {
+    id: [17, 18],
+    title: "17",
+    items: [{ id: [17, 18], title: "16" }],
+  },
+  {
+    id: [17, 18],
+    title: "18",
+    items: [{ id: [17, 18], title: "16" }],
+  },
 ];
 export const board = [
   {
     id: 1,
     title:
-      "Установите приборы пожарной сигнализации в офисном помещении ",
+      "Установите оконечные резисторы в шлейфах схемы ",
     items: [
       {
         id: [2],

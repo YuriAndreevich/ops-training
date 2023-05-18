@@ -91,12 +91,12 @@ export const iBoard = [
   },
   {
     id: [17, 18],
-    title: "16",
+    title: "17",
     items: [{ id: [17, 18], title: "16" }],
   },
   {
     id: [17, 18],
-    title: "16",
+    title: "18",
     items: [{ id: [17, 18], title: "16" }],
   },
 ];
